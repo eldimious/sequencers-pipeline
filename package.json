@@ -1,0 +1,25 @@
+{
+  "name": "generators",
+  "version": "1.0.0",
+  "description": "Task for Jumpcut",
+  "main": "index.js",
+  "scripts": {
+    "tests": "mocha index.test.js --recursive"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eldimious/sequencers-pipeline.git"
+  },
+  "author": "Dimos Botsaris <botsaris.d@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "eslint": "^4.7.2",
+    "eslint-config-airbnb": "^15.1.0",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-jsx-a11y": "^6.0.2",
+    "eslint-plugin-react": "^7.3.0",
+    "mocha": "^3.5.3",
+    "sinon": "^4.0.0"
+  }
+}
