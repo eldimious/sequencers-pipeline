@@ -112,26 +112,28 @@ function  accumulator() {
     };
 }
 ```
-```
+``` js
 //Example
 var ac  = accumulator();  //  ac(1) ->  1,  ac(4) ->  5,  ac(2) ->  
 ```
+
 We  could create  the piped sequencer like  this:
 
-```
+```js
 var pipedSeq  = pipeSeq(rangeSeq, 2,  3)  //  2,  5,  8,  
             .pipeline(accumulator)  //  2,  7 (5+2),  15(7+8),  26(15+
 )
             .invoke();
 ```
-```
-pipedSeq is a range sequencer whose values  are streamed  to  the
-accumulator() function. This  function  sum the values  of  the sequence.
-```
+
+
+`pipedSeq` is a range sequencer whose values are streamed to the </br>
+`accumulator()` function. This function sum the values of the sequence.
+
 
 These are the expected  results:
 
-```
+```js
 var seq = generator(pipedSeq);
 seq.next(); //  
 seq.next(); //  
@@ -139,7 +141,7 @@ seq.next(); //
 seq.next(); //  
 ...
 ```
-The same  pipedSeq object can have  more  than  one pipe.
+The same pipedSeq object can have more than one pipe.
 
 You should  implement too the isEven pipe function:
 
