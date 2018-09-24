@@ -1,6 +1,6 @@
 # Description
 
-##Part 1
+## Part 1
 
 Generators and Iterators are new ES6 features that will allow things like this:
 
@@ -64,8 +64,7 @@ When you’re done, you should implement the following generators:
 ```js
 function  factorialSeq()  {...} //  1,  1,  2,  6,  24, ...
 function  fibonacciSeq()  {...} //  1,  1,  2,  3,  5,  8,  13, ...
-function  rangeSeq(start, step) {...} //  rangeSeq(1, 2)    ->  1,
-  3,  5,  7,  ...
+function  rangeSeq(start, step) {...} //  rangeSeq(1, 2)    ->  1, 3,  5,  7,  ...
 function  primeSeq()  {...} //  2,  3,  5,  7,  11, 13, ...
 partialSumSeq(1,  3,  7,  2,  0)  {...} //  1,  4,  11, 13, 13, end
 ```
@@ -85,33 +84,26 @@ seq.next(); //  !4  =
 
 There are some sequences which are infinite and others are not. For example:
 
-primeSeq: Is  infinite
-partialSumSeq:  Is  limited to  the passed  values.
-When  the sequence  is  done  (in finite  sequences), if  you call  seq.next()
-again,  it  should  produce an  error.
+`primeSeq`: Is infinite
+`partialSumSeq`:  Is limited to the passed values. </br>
+When the sequence is done (in finite sequences), if you call seq.next() again, it should produce an error.
 
-## Part 
+## Part 2
 
-You have  to  implement the pipeSeq() function. This  function  allows  you
-to  pipe  generator to  some  functions.  Thus  the generated sequence  is
-streamed  to  a function.
+You have to implement the `pipeSeq() function`. This function allows you to pipe generator to some functions. Thus the generated sequence is streamed to a function.
 
-pipeSeq() receives  the sequencer function  and optionally  some
-parameters  passed  to  the sequencer and returns and object  with  two
-methods:
+`pipeSeq()` receives the sequencer function and optionally some parameters passed to the sequencer and returns and object with two methods:
 
-```
-pipeline(pipe):receives the pipe  function  and optionally  some
-```
+1. `pipeline(pipe)`: receives the pipe function and optionally some parameters passed to the pipe function. It returns itself.
 
-```
-parameters  passed  to  the pipe  function. It  returns itself.
-invoke(): return  the piped sequencer object.
-This  is  and example to  understand  this:
-```
+2. `invoke()`: return the piped sequencer object.
+
+
+This  is  and example to  understand  this: </br>
+
 Given this  pipeline  function:
 
-```
+``` js
 function  accumulator() {
     var sum = 0;
     return  function(value) {
