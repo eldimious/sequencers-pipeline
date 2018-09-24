@@ -143,15 +143,13 @@ seq.next(); //
 ```
 The same pipedSeq object can have more than one pipe.
 
-You should  implement too the isEven pipe function:
+You should implement too the isEven pipe function:
 
-```
-function  isEven(){...}
-```
-```
-var ie  = isEven(); //  ie(1) ->  {status:  false,  number:1},  ie(
-4)  ->  {status:  true, number:4}
+```js
+function isEven(){...}
 
+var ie = isEven(); //  ie(1) ->  {status:  false,  number:1},  ie(4)  ->  {status:  true, number:4}
+```
 
 # Requirements
 
