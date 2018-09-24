@@ -4,8 +4,8 @@ Generators	and	Iterators	are	new	ES6	features	that	will	allow	things	like
 this:
 
 ```js
-function*	fibonacci()	{
-				let	[prev,	curr]	=	[0,	1];
+function* fibonacci() {
+ let [prev, curr] =	[0,	1];
 				for	(;;)	{
 								[prev,	curr]	=	[curr,	prev	+	curr];
 								yield	curr;
