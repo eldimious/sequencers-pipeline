@@ -30,7 +30,7 @@ The goal is to **implement pseudo-generators without the use of generators**.
 The first thing to do is to implement the generator function:
 
 ```js
-function  generator(sequencer)  {
+function generator(sequencer)  {
   ...
 }
 ```
@@ -158,3 +158,11 @@ var ie = isEven(); //  ie(1) ->  {status:  false,  number:1},  ie(4)  ->  {statu
 # Running tests
 
 - To run the tests you have to run `npm run tests`
+
+## Support Me
+
+[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/Y8Y797KCA)
+
+## Show your support
+
+Give a ⭐️ if this project helped you!
